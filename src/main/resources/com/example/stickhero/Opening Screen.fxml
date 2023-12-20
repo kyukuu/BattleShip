@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickhero.SceneControllerOpening">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="662.0" fitWidth="970.0" layoutX="-69.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="heroImageView" fitHeight="38.0" fitWidth="38.0" layoutX="273.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@myHero.png" />
+         </image>
+      </ImageView>
+      <Rectangle fill="#131313" height="131.0" layoutX="245.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="110.0" />
+      <Label layoutX="173.0" layoutY="32.0" text="STICK HERO" textFill="#efefef">
+         <font>
+            <Font name="Century Gothic Bold" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" layoutX="173.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToPlaying" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 50%; -fx-min-height: 100px; -fx-min-width: 100px; -fx-cursor: hand;" text="PLAY">
+         <font>
+            <Font name="Century Gothic Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="resumeGame" alignment="CENTER" contentDisplay="CENTER" layoutX="305.0" layoutY="100.0" mnemonicParsing="false" onAction="#loadGame" style="-fx-background-color: purple; -fx-text-fill: white; -fx-background-radius: 50%; -fx-min-height: 100px; -fx-min-width: 100px; -fx-cursor: hand;" text="RESUME" textOverrun="CLIP">
+         <font>
+            <Font name="Century Gothic Bold" size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

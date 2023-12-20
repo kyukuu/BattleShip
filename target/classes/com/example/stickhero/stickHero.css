@@ -1,0 +1,9 @@
+
+
+.button {
+    -fx-background-color: white; /* Background color of the button */
+    -fx-text-fill: black;        /* Text color */
+    -fx-background-radius: 0;    /* Sharp edges */      /* Font size */
+    -fx-cursor: hand;            /* Cursor changes to hand on hover */
+}
+
